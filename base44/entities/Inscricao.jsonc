@@ -1,0 +1,30 @@
+{
+  "name": "Inscricao",
+  "type": "object",
+  "properties": {
+    "inscrito_id": {
+      "type": "string"
+    },
+    "acampamento_id": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Pr\u00e9-inscri\u00e7\u00e3o",
+        "Inscrito",
+        "Documenta\u00e7\u00e3o pendente",
+        "Confirmado",
+        "Cancelado"
+      ],
+      "default": "Pr\u00e9-inscri\u00e7\u00e3o"
+    },
+    "observacoes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "inscrito_id",
+    "acampamento_id"
+  ]
+}

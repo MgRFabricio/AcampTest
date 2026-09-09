@@ -1,0 +1,57 @@
+{
+  "name": "InscricaoSite",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "type": "string"
+    },
+    "sexo": {
+      "type": "string",
+      "enum": [
+        "F",
+        "M"
+      ]
+    },
+    "camiseta": {
+      "type": "string",
+      "enum": [
+        "PP",
+        "P",
+        "M",
+        "G",
+        "GG",
+        "EXG",
+        "EXGG",
+        "XGG"
+      ]
+    },
+    "cidade": {
+      "type": "string"
+    },
+    "idade": {
+      "type": "number"
+    },
+    "peso": {
+      "type": "number"
+    },
+    "telefone": {
+      "type": "string"
+    },
+    "acampamento_id": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Inscrito",
+        "Sorteado",
+        "Confirmado"
+      ],
+      "default": "Inscrito"
+    }
+  },
+  "required": [
+    "nome",
+    "acampamento_id"
+  ]
+}

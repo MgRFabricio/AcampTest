@@ -1,0 +1,32 @@
+{
+  "name": "Tribo",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "type": "string"
+    },
+    "nucleo": {
+      "type": "number"
+    },
+    "acampamento_id": {
+      "type": "string"
+    },
+    "responsavel": {
+      "type": "string"
+    },
+    "anjo": {
+      "type": "string"
+    },
+    "cor": {
+      "type": "string"
+    },
+    "ativa": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "nome",
+    "acampamento_id"
+  ]
+}

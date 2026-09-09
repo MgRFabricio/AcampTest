@@ -1,0 +1,59 @@
+{
+  "name": "Campista",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "type": "string"
+    },
+    "ficha": {
+      "type": "string"
+    },
+    "sexo": {
+      "type": "string",
+      "enum": [
+        "F",
+        "M"
+      ]
+    },
+    "camiseta": {
+      "type": "string",
+      "enum": [
+        "PP",
+        "P",
+        "M",
+        "G",
+        "GG",
+        "EXG",
+        "EXGG",
+        "XGG"
+      ]
+    },
+    "tribo": {
+      "type": "string"
+    },
+    "pagamento": {
+      "type": "string",
+      "enum": [
+        "Pago",
+        "Pendente"
+      ],
+      "default": "Pendente"
+    },
+    "cidade": {
+      "type": "string"
+    },
+    "idade": {
+      "type": "number"
+    },
+    "peso": {
+      "type": "number"
+    },
+    "acampamento_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "nome",
+    "acampamento_id"
+  ]
+}

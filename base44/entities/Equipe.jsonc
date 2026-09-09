@@ -1,0 +1,44 @@
+{
+  "name": "Equipe",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "type": "string"
+    },
+    "papel": {
+      "type": "string",
+      "enum": [
+        "Coordenador",
+        "L\u00edder",
+        "Servo"
+      ]
+    },
+    "funcao": {
+      "type": "string"
+    },
+    "tribo": {
+      "type": "string"
+    },
+    "camiseta": {
+      "type": "string"
+    },
+    "telefone": {
+      "type": "string"
+    },
+    "sexo": {
+      "type": "string",
+      "enum": [
+        "F",
+        "M"
+      ]
+    },
+    "acampamento_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "nome",
+    "papel",
+    "acampamento_id"
+  ]
+}

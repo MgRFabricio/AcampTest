@@ -1,0 +1,33 @@
+{
+  "name": "Convite",
+  "type": "object",
+  "properties": {
+    "numero": {
+      "type": "number"
+    },
+    "casal_contato": {
+      "type": "string"
+    },
+    "telefones": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Pago",
+        "Pendente"
+      ],
+      "default": "Pendente"
+    },
+    "notas": {
+      "type": "string"
+    },
+    "acampamento_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "casal_contato",
+    "acampamento_id"
+  ]
+}

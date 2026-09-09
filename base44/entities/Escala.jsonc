@@ -1,0 +1,40 @@
+{
+  "name": "Escala",
+  "type": "object",
+  "properties": {
+    "titulo": {
+      "type": "string"
+    },
+    "categoria": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "planejado",
+        "pronto"
+      ],
+      "default": "planejado"
+    },
+    "periodo": {
+      "type": "string"
+    },
+    "data": {
+      "type": "string",
+      "format": "date"
+    },
+    "horario": {
+      "type": "string"
+    },
+    "acampamento_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "titulo",
+    "acampamento_id"
+  ]
+}

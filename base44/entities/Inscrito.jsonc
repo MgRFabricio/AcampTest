@@ -1,0 +1,277 @@
+{
+  "name": "Inscrito",
+  "type": "object",
+  "properties": {
+    "codigo": {
+      "type": "string"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "data_nascimento": {
+      "type": "string",
+      "format": "date"
+    },
+    "sexo": {
+      "type": "string",
+      "enum": [
+        "M",
+        "F"
+      ]
+    },
+    "cpf": {
+      "type": "string"
+    },
+    "rg": {
+      "type": "string"
+    },
+    "estado_civil": {
+      "type": "string",
+      "enum": [
+        "Solteiro(a)",
+        "Casado(a)",
+        "Divorciado(a)",
+        "Vi\u00favo(a)",
+        "Outro"
+      ]
+    },
+    "profissao": {
+      "type": "string"
+    },
+    "telefone_fixo": {
+      "type": "string"
+    },
+    "celular": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "cep": {
+      "type": "string"
+    },
+    "logradouro": {
+      "type": "string"
+    },
+    "numero": {
+      "type": "string"
+    },
+    "complemento": {
+      "type": "string"
+    },
+    "bairro": {
+      "type": "string"
+    },
+    "cidade": {
+      "type": "string"
+    },
+    "uf": {
+      "type": "string"
+    },
+    "ponto_referencia": {
+      "type": "string"
+    },
+    "peso": {
+      "type": "number"
+    },
+    "altura": {
+      "type": "number"
+    },
+    "camiseta": {
+      "type": "string",
+      "enum": [
+        "PP",
+        "P",
+        "M",
+        "G",
+        "GG",
+        "XG",
+        "XXG",
+        "Outro"
+      ]
+    },
+    "mora_com": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "mora_com_outros": {
+      "type": "string"
+    },
+    "pais_moram_curvelandia": {
+      "type": "string",
+      "enum": [
+        "Sim",
+        "N\u00e3o",
+        "N\u00e3o se aplica"
+      ]
+    },
+    "nome_pai": {
+      "type": "string"
+    },
+    "telefone_pai": {
+      "type": "string"
+    },
+    "nome_mae": {
+      "type": "string"
+    },
+    "telefone_mae": {
+      "type": "string"
+    },
+    "nome_conjuge": {
+      "type": "string"
+    },
+    "telefone_conjuge": {
+      "type": "string"
+    },
+    "participa_go": {
+      "type": "string",
+      "enum": [
+        "Sim",
+        "N\u00e3o"
+      ]
+    },
+    "qual_go": {
+      "type": "string"
+    },
+    "frequenta_go": {
+      "type": "string"
+    },
+    "participou_retiro": {
+      "type": "string",
+      "enum": [
+        "Sim",
+        "N\u00e3o"
+      ]
+    },
+    "qual_retiro": {
+      "type": "string"
+    },
+    "vida_crista": {
+      "type": "string"
+    },
+    "outra_religiao": {
+      "type": "string"
+    },
+    "casado_igreja": {
+      "type": "string",
+      "enum": [
+        "Sim",
+        "N\u00e3o",
+        "N\u00e3o se aplica"
+      ]
+    },
+    "problema_saude": {
+      "type": "string",
+      "enum": [
+        "Sim",
+        "N\u00e3o"
+      ]
+    },
+    "qual_problema_saude": {
+      "type": "string"
+    },
+    "tratamento_saude": {
+      "type": "string"
+    },
+    "alergia_deficiencia": {
+      "type": "string",
+      "enum": [
+        "Sim",
+        "N\u00e3o"
+      ]
+    },
+    "qual_alergia_deficiencia": {
+      "type": "string"
+    },
+    "toma_medicamento": {
+      "type": "string",
+      "enum": [
+        "Sim",
+        "N\u00e3o"
+      ]
+    },
+    "nome_medicamento": {
+      "type": "string"
+    },
+    "dosagem": {
+      "type": "string"
+    },
+    "horario_medicamento": {
+      "type": "string"
+    },
+    "obs_medicamento": {
+      "type": "string"
+    },
+    "amigo1_nome": {
+      "type": "string"
+    },
+    "amigo1_telefone": {
+      "type": "string"
+    },
+    "amigo2_nome": {
+      "type": "string"
+    },
+    "amigo2_telefone": {
+      "type": "string"
+    },
+    "tem_conhecido_participante": {
+      "type": "string",
+      "enum": [
+        "Sim",
+        "N\u00e3o"
+      ]
+    },
+    "conhecido_nome": {
+      "type": "string"
+    },
+    "conhecido_documento": {
+      "type": "string"
+    },
+    "conhecido_grau": {
+      "type": "string"
+    },
+    "conhecido_obs": {
+      "type": "string"
+    },
+    "termo_status": {
+      "type": "string",
+      "enum": [
+        "Entregue",
+        "N\u00e3o entregue",
+        "Pendente"
+      ]
+    },
+    "termo_data_entrega": {
+      "type": "string",
+      "format": "date"
+    },
+    "termo_responsavel": {
+      "type": "string"
+    },
+    "termo_obs": {
+      "type": "string"
+    },
+    "termo_arquivo": {
+      "type": "string"
+    },
+    "status_inscricao": {
+      "type": "string",
+      "enum": [
+        "Pr\u00e9-inscri\u00e7\u00e3o",
+        "Inscrito",
+        "Documenta\u00e7\u00e3o pendente",
+        "Confirmado",
+        "Cancelado"
+      ],
+      "default": "Pr\u00e9-inscri\u00e7\u00e3o"
+    },
+    "obs_gerais": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "nome"
+  ]
+}

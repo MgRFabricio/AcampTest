@@ -1,0 +1,46 @@
+{
+  "properties": {
+    "role": {
+      "type": "string",
+      "description": "The role of the user in the app",
+      "enum": [
+        "admin",
+        "user"
+      ]
+    },
+    "is_master": {
+      "type": "boolean",
+      "default": false,
+      "description": "Administrador Master - pode gerenciar tudo, inclusive outros administradores"
+    },
+    "telefone": {
+      "type": "string",
+      "description": "Telefone de contato do usu\u00e1rio"
+    },
+    "cidade": {
+      "type": "string",
+      "description": "Cidade do usu\u00e1rio"
+    },
+    "bio": {
+      "type": "string",
+      "description": "Observa\u00e7\u00f5es pessoais do usu\u00e1rio"
+    },
+    "notificacoes_email": {
+      "type": "boolean",
+      "default": true,
+      "description": "Receber notifica\u00e7\u00f5es por e-mail sobre o acampamento"
+    },
+    "acampamentos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "IDs dos acampamentos em que o usu\u00e1rio participa"
+    }
+  },
+  "required": [
+    "role"
+  ],
+  "name": "User",
+  "type": "object"
+}

@@ -1,0 +1,35 @@
+{
+  "name": "Acampamento",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "type": "string"
+    },
+    "lema": {
+      "type": "string"
+    },
+    "data_inicio": {
+      "type": "string",
+      "format": "date"
+    },
+    "data_fim": {
+      "type": "string",
+      "format": "date"
+    },
+    "capacidade": {
+      "type": "number",
+      "default": 0
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "em_andamento",
+        "planejamento"
+      ],
+      "default": "planejamento"
+    }
+  },
+  "required": [
+    "nome"
+  ]
+}

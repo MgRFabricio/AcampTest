@@ -1,0 +1,29 @@
+{
+  "name": "Documento",
+  "type": "object",
+  "properties": {
+    "titulo": {
+      "type": "string"
+    },
+    "tipo": {
+      "type": "string",
+      "enum": [
+        "Musicas",
+        "Carta Coordenador",
+        "Carta Campista",
+        "Carta Pregador"
+      ]
+    },
+    "arquivo_url": {
+      "type": "string"
+    },
+    "acampamento_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "titulo",
+    "tipo",
+    "acampamento_id"
+  ]
+}
